@@ -23,7 +23,9 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Center(
-            child: Text('Lottery winning number is 4'),
+            child: Text('Lottery winning number is 4',style: TextStyle(
+        fontSize: 18,
+      ),),
           ),
           const SizedBox(
             height: 20,
@@ -47,9 +49,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.green,
                           size: 35,
                         ),
+                        SizedBox(height: 20,),
                         Text(
                           'Congratulation you have won the lottery, your number is $x\n',
                           textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
                         ),
                       ],
                     )
@@ -62,9 +68,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.red,
                           size: 35,
                         ),
+                        SizedBox(height: 20,),
+
                         Text(
                           'Better luck next time your number is $x\n try again',
                           textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 18,
+                          ),
                         ),
                       ],
                     ),
